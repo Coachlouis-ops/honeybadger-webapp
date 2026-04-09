@@ -70,7 +70,11 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="h-[400px] bg-gradient-to-br from-purple-900 to-black rounded-lg" />
+       <img
+  src="/main_2.png"
+  alt="Technology systems"
+  className="w-full h-[300px] md:h-[400px] object-cover rounded-lg"
+/>
       </section>
 
       {/* ================= STATS ================= */}
