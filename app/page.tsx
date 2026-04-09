@@ -16,7 +16,7 @@ export default function HomePage() {
     <img
       src="/maindash_1.png"
       alt="Honey Badger Technologies PTY. LTD"
-      className="h-16 w-auto object-contain mb-2"
+      className="h-28 md:h-20 w-auto object-contain mb-2"
     />
 
     <div className="font-bold leading-tight text-sm">
