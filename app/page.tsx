@@ -1,65 +1,172 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import { useRouter } from "next/navigation";
+
+export default function HomePage() {
+  const router = useRouter();
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <main className="bg-[#0b071d] text-white">
+
+      {/* ================= HEADER ================= */}
+      <header className="w-full flex justify-between items-center px-8 py-6 border-b border-purple-800">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 bg-purple-600 rounded" />
+          <div className="font-bold">
+            HONEY BADGER <br /> TECHNOLOGIES
+          </div>
+        </div>
+
+        <nav className="flex items-center gap-8 text-sm">
+          <button onClick={() => router.push("/")}>Home</button>
+          <button onClick={() => router.push("/solutions")}>Solutions</button>
+          <button onClick={() => router.push("/portfolio")}>Portfolio</button>
+          <button onClick={() => router.push("/about")}>About</button>
+
+          <a
+            href="mailto:info@honeybadgertech.com"
+            className="bg-purple-600 px-4 py-2 rounded"
+          >
+            Contact Us
+          </a>
+        </nav>
+      </header>
+
+      {/* ================= HERO ================= */}
+      <section className="px-8 py-20 grid md:grid-cols-2 gap-10 items-center">
+
+        <div>
+          <p className="text-purple-400 mb-4 text-sm">
+            TECHNOLOGY • PLATFORMS • AI
+          </p>
+
+          <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+            Build <span className="text-purple-500">Bold.</span><br />
+            Scale <span className="text-purple-500">Fast.</span> Win Big.
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
+
+          <p className="mt-6 text-gray-300 max-w-lg">
+            We develop business support systems, digital platforms, and AI-driven
+            solutions that improve operational efficiency and create new digital revenue streams.
+          </p>
+
+          <div className="flex gap-4 mt-8">
             <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              href="mailto:info@honeybadgertech.com"
+              className="border border-purple-500 px-6 py-3 rounded"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+              Get In Touch
+            </a>
+          </div>
+        </div>
+
+        <div className="h-[400px] bg-gradient-to-br from-purple-900 to-black rounded-lg" />
+      </section>
+
+      {/* ================= STATS ================= */}
+      <section className="grid grid-cols-2 md:grid-cols-4 text-center py-10 border-t border-b border-purple-800">
+        <div>
+          <h2 className="text-3xl font-bold text-purple-500">50+</h2>
+          <p>Projects Delivered</p>
+        </div>
+        <div>
+          <h2 className="text-3xl font-bold text-purple-500">12+</h2>
+          <p>Industries Served</p>
+        </div>
+        <div>
+          <h2 className="text-3xl font-bold text-purple-500">99%</h2>
+          <p>Uptime SLA</p>
+        </div>
+        <div>
+          <h2 className="text-3xl font-bold text-purple-500">8+</h2>
+          <p>Years Building</p>
+        </div>
+      </section>
+
+      {/* ================= CORE ================= */}
+      <section className="px-8 py-20">
+        <h2 className="text-4xl font-bold mb-10">Core Capabilities</h2>
+
+        <div className="grid md:grid-cols-2 gap-6">
+
+          <div className="border border-purple-700 p-6 rounded">
+            <h3 className="text-xl font-bold mb-3">Business Support Systems</h3>
+            <p className="text-gray-300">
+              End-to-end BSS platforms that streamline operations and automate billing.
+            </p>
+          </div>
+
+          <div className="border border-purple-700 p-6 rounded">
+            <h3 className="text-xl font-bold mb-3">Digital Products & Platforms</h3>
+            <p className="text-gray-300">
+              Custom web and mobile platforms that create new digital revenue streams.
+            </p>
+          </div>
+
+          <div className="border border-purple-700 p-6 rounded">
+            <h3 className="text-xl font-bold mb-3">AI-Driven Solutions</h3>
+            <p className="text-gray-300">
+              Intelligent systems that automate workflows and deliver insights.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ================= CTA ================= */}
+      <section className="px-8 py-20 border-t border-purple-800 flex justify-between items-center flex-col md:flex-row gap-6">
+        <div>
+          <h2 className="text-4xl font-bold">
+            The right platform changes <span className="text-purple-500">everything.</span>
+          </h2>
+          <p className="text-gray-300 mt-4">
+            Let's talk about your next platform or digital transformation.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <a
+          href="https://wa.me/27828370266"
+          target="_blank"
+          className="bg-purple-600 px-6 py-3 rounded"
+        >
+          Start a Conversation →
+        </a>
+      </section>
+
+      {/* ================= FOOTER ================= */}
+      <footer className="px-8 py-16 border-t border-purple-800 grid md:grid-cols-3 gap-10">
+
+        <div>
+          <h3 className="font-bold mb-4">HONEY BADGER TECHNOLOGIES</h3>
+          <p className="text-gray-400">
+            Building scalable digital platforms and AI-driven systems.
+          </p>
         </div>
-      </main>
-    </div>
+
+        <div>
+          <h4 className="font-bold mb-4">Solutions</h4>
+          <ul className="space-y-2 text-gray-400">
+            <li>Digital Products</li>
+            <li>AI Solutions</li>
+            <li>Mobile Applications</li>
+            <li>E-commerce Systems</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="font-bold mb-4">Company</h4>
+          <ul className="space-y-2 text-gray-400">
+            <li>Portfolio</li>
+            <li>Industries</li>
+            <li>
+              <a href="mailto:info@honeybadgertech.com">Contact</a>
+            </li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+
+      </footer>
+
+    </main>
   );
 }
