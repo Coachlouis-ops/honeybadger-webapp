@@ -33,7 +33,7 @@ export default function HomePage() {
     <button onClick={() => router.push("/about")}>About</button>
 
     <a
-      href="mailto:info@honeybadgertech.com"
+      onClick={() => router.push("/contact")}
       className="bg-purple-600 px-3 py-1 rounded"
     >
       Contact
@@ -62,7 +62,7 @@ export default function HomePage() {
 
           <div className="flex gap-4 mt-8">
             <a
-              href="mailto:info@honeybadgertech.com"
+              onClick={() => router.push("/contact")}
               className="border border-purple-500 px-6 py-3 rounded"
             >
               Get In Touch
