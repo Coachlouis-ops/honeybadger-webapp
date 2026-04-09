@@ -10,12 +10,13 @@ export default function HomePage() {
 
       {/* ================= HEADER ================= */}
       <header className="w-full flex justify-between items-center px-8 py-6 border-b border-purple-800">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-purple-600 rounded" />
-          <div className="font-bold">
-            HONEY BADGER <br /> TECHNOLOGIES
-          </div>
-        </div>
+       <div className="flex items-center gap-3">
+  <img
+    src="/maindash_1.png"
+    alt="Honey Badger Technologies PTY. ltd"
+    className="h-10 w-auto object-contain"
+  />
+</div>
 
         <nav className="flex items-center gap-8 text-sm">
           <button onClick={() => router.push("/")}>Home</button>
