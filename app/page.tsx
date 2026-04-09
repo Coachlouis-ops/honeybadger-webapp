@@ -9,22 +9,24 @@ export default function HomePage() {
     <main className="bg-[#0b071d] text-white">
 
       {/* ================= HEADER ================= */}
- <header className="w-full flex justify-between items-center px-8 py-6 border-b border-purple-800">
-  
-  <div className="flex items-center gap-4">
+<header className="w-full border-b border-purple-800 px-4 py-4">
+
+  {/* TOP: LOGO + NAME CENTERED */}
+  <div className="flex flex-col items-center text-center">
     <img
       src="/maindash_1.png"
       alt="Honey Badger Technologies PTY. LTD"
-      className="h-16 md:h-20 w-auto object-contain"
+      className="h-16 w-auto object-contain mb-2"
     />
 
-    <div className="font-bold leading-tight text-sm md:text-base">
+    <div className="font-bold leading-tight text-sm">
       HONEY BADGER TECHNOLOGIES <br />
       <span className="text-purple-400">PTY. LTD</span>
     </div>
   </div>
 
-  <nav className="flex items-center gap-8 text-sm">
+  {/* NAV BELOW */}
+  <nav className="mt-4 flex flex-wrap justify-center gap-4 text-sm">
     <button onClick={() => router.push("/")}>Home</button>
     <button onClick={() => router.push("/solutions")}>Solutions</button>
     <button onClick={() => router.push("/portfolio")}>Portfolio</button>
@@ -32,9 +34,9 @@ export default function HomePage() {
 
     <a
       href="mailto:info@honeybadgertech.com"
-      className="bg-purple-600 px-4 py-2 rounded"
+      className="bg-purple-600 px-3 py-1 rounded"
     >
-      Contact Us
+      Contact
     </a>
   </nav>
 
