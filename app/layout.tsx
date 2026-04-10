@@ -15,6 +15,15 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Honey Badger Technologies",
   description: "We build scalable platforms, systems, and AI-driven solutions.",
+
+  manifest: "/manifest.json",
+
+  icons: {
+    icon: "/icons/icon-192.png",
+    shortcut: "/icons/icon-192.png",
+    apple: "/icons/icon-192.png",
+  },
+
   openGraph: {
     title: "Honey Badger Technologies",
     description: "Build Bold. Scale Fast. Win Big.",
