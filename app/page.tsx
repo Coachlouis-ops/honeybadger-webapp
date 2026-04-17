@@ -11,7 +11,6 @@ export default function HomePage() {
       {/* ================= HEADER ================= */}
 <header className="w-full border-b border-purple-800 px-4 py-4">
 
-  {/* TOP: LOGO + NAME CENTERED */}
   <div className="flex flex-col items-center text-center">
     <img
       src="/maindash_1.png"
@@ -25,7 +24,6 @@ export default function HomePage() {
     </div>
   </div>
 
-  {/* NAV BELOW */}
   <nav className="mt-4 flex flex-wrap justify-center gap-4 text-sm">
     <button onClick={() => router.push("/")}>Home</button>
     <button onClick={() => router.push("/solutions")}>Solutions</button>
@@ -47,17 +45,21 @@ export default function HomePage() {
 
         <div>
           <p className="text-purple-400 mb-4 text-sm">
-            TECHNOLOGY • PLATFORMS • AI
+            TECHNOLOGY • DIGITAL PLATFORMS • GLOBAL PRODUCTS
           </p>
 
           <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-            Build <span className="text-purple-500">Bold.</span><br />
-            Scale <span className="text-purple-500">Fast.</span> Win Big.
+            We Build & Operate <span className="text-purple-500">Revenue-Generating Platforms</span>
           </h1>
 
           <p className="mt-6 text-gray-300 max-w-lg">
-            We develop business support systems, digital platforms, and AI-driven
-            solutions that improve operational efficiency and create new digital revenue streams.
+            Honey Badger Technologies develops, owns, and operates digital platforms used by customers globally.
+            Our platforms generate revenue through subscriptions, digital products, and transaction-based models.
+          </p>
+
+          <p className="mt-4 text-gray-400 max-w-lg text-sm">
+            Our flagship platform, Teez Golf Challenges, is a global skill-based competition platform where players
+            purchase digital tokens to enter challenges, compete, and win rewards.
           </p>
 
           <div className="flex gap-4 mt-8">
@@ -127,6 +129,133 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ================= PLATFORMS ================= */}
+      <section className="px-8 pb-20">
+        <h2 className="text-4xl font-bold mb-10">Current Live Platforms</h2>
+
+        <div className="space-y-10">
+
+          {/* TEEZ - FLAGSHIP */}
+          <div className="border border-purple-500 p-6 rounded-lg">
+            <img src="/teez_logo.png" className="h-16 mb-4" />
+
+            <h3 className="text-2xl font-bold mb-2">Teez Golf Challenges</h3>
+
+            <p className="text-sm text-purple-400 mb-2">
+              Target Market: Global amateur and professional golfers
+            </p>
+
+            <p className="text-gray-300 mb-4">
+              A global skill-based golf competition platform where players enter challenges using digital tokens,
+              compete based on performance, and earn rewards. The platform operates on a digital entry system and
+              does not involve betting or gambling.
+            </p>
+
+            <a href="https://www.teezgolfchallenges.com" target="_blank" className="text-purple-400">
+              Visit Platform →
+            </a>
+          </div>
+
+          {/* VECTOR CARTS */}
+          <div className="border border-purple-700 p-6 rounded-lg">
+            <img src="/vector_logo.png" className="h-16 mb-4" />
+
+            <h3 className="text-2xl font-bold mb-2">Vector Carts</h3>
+
+            <p className="text-sm text-purple-400 mb-2">
+              Target Market: Golf estates, resorts, and private buyers
+            </p>
+
+            <p className="text-gray-300 mb-4">
+              A digital platform showcasing and selling premium electric golf carts, providing customers with
+              product information, customization options, and purchase inquiries.
+            </p>
+
+            <a href="https://vectorcarts.co.za" target="_blank" className="text-purple-400">
+              Visit Website →
+            </a>
+          </div>
+
+          {/* MBT WEBSITE */}
+          <div className="border border-purple-700 p-6 rounded-lg">
+            <img src="/mbt_website.png" className="h-16 mb-4" />
+
+            <h3 className="text-2xl font-bold mb-2">Middelburg Bearings Website</h3>
+
+            <p className="text-sm text-purple-400 mb-2">
+              Target Market: Industrial and mechanical supply clients
+            </p>
+
+            <p className="text-gray-300 mb-4">
+              A business website for an industrial supplier, providing product listings, company information,
+              and customer contact channels.
+            </p>
+
+            <a href="https://middelburgbearingsandtransmission.com" target="_blank" className="text-purple-400">
+              Visit Website →
+            </a>
+          </div>
+
+          {/* MBT ANDROID */}
+          <div className="border border-purple-700 p-6 rounded-lg">
+            <img src="/middelburg_app.png" className="h-16 mb-4" />
+
+            <h3 className="text-2xl font-bold mb-2">Middelburg Bearings App</h3>
+
+            <p className="text-sm text-purple-400 mb-2">
+              Target Market: Existing industrial customers and field buyers
+            </p>
+
+            <p className="text-gray-300 mb-4">
+              A mobile application enabling customers to browse products, place orders, and interact with the supplier directly.
+            </p>
+
+            <a href="https://play.google.com/store/apps/details?id=com.middelburgbearings.app&pcampaignid=web_share" target="_blank" className="text-purple-400">
+              View on Play Store →
+            </a>
+          </div>
+
+          {/* JOY APP */}
+          <div className="border border-purple-700 p-6 rounded-lg">
+            <img src="/joy_app.png" className="h-16 mb-4" />
+
+            <h3 className="text-2xl font-bold mb-2">Joy Furniture App</h3>
+
+            <p className="text-sm text-purple-400 mb-2">
+              Target Market: Retail furniture customers
+            </p>
+
+            <p className="text-gray-300 mb-4">
+              A mobile platform allowing customers to browse furniture, view pricing, and engage with the business digitally.
+            </p>
+
+            <a href="https://play.google.com/store/apps/details?id=com.honeybadger.joyfurniture2024&pcampaignid=web_share" target="_blank" className="text-purple-400">
+              View on Play Store →
+            </a>
+          </div>
+
+          {/* FURNISEARCH */}
+          <div className="border border-purple-700 p-6 rounded-lg">
+            <img src="/funrisearch_web.png" className="h-16 mb-4" />
+
+            <h3 className="text-2xl font-bold mb-2">Furnisearch</h3>
+
+            <p className="text-sm text-purple-400 mb-2">
+              Target Market: Furniture buyers and suppliers
+            </p>
+
+            <p className="text-gray-300 mb-4">
+              A furniture search and lead-generation platform connecting customers with suppliers through advanced filtering and inquiry systems.
+            </p>
+
+            <a href="https://www.furnisearch.co.za" target="_blank" className="text-purple-400">
+              Visit Platform →
+            </a>
+          </div>
+
+        </div>
+      </section>
+
       {/* ================= CTA ================= */}
       <section className="px-8 py-20 border-t border-purple-800 flex justify-between items-center flex-col md:flex-row gap-6">
         <div>
@@ -153,7 +282,7 @@ export default function HomePage() {
         <div>
           <h3 className="font-bold mb-4">HONEY BADGER TECHNOLOGIES</h3>
           <p className="text-gray-400">
-            Building scalable digital platforms and AI-driven systems.
+            Developing and operating global digital platforms.
           </p>
         </div>
 
