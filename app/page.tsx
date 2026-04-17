@@ -177,7 +177,7 @@ export default function HomePage() {
 
     {/* MBT WEBSITE (FIXED NAME) */}
     <div className="border border-purple-700 p-6 rounded-lg">
-      <img src="/mbt_wedsite.png" className="h-16 mb-4" />
+      <img src="/mbt_website.png" className="h-16 mb-4" />
 
       <h3 className="text-2xl font-bold mb-2">Middelburg Bearings Website</h3>
 
