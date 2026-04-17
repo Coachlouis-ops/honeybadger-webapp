@@ -1,6 +1,18 @@
 "use client";
 
+import { useState } from "react";
+
 export default function ContactPage() {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    company: "",
+    interest: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
   return (
     <main className="bg-[#0b071d] text-white px-6 md:px-16 py-16">
 
@@ -66,11 +78,15 @@ export default function ContactPage() {
 
             <input
               placeholder="Full Name"
+              value={form.name}
+              onChange={(e) => setForm({ ...form, name: e.target.value })}
               className="bg-transparent border border-purple-700 p-3 rounded"
             />
 
             <input
               placeholder="Email Address"
+              value={form.email}
+              onChange={(e) => setForm({ ...form, email: e.target.value })}
               className="bg-transparent border border-purple-700 p-3 rounded"
             />
 
@@ -80,11 +96,15 @@ export default function ContactPage() {
 
             <input
               placeholder="Company"
+              value={form.company}
+              onChange={(e) => setForm({ ...form, company: e.target.value })}
               className="bg-transparent border border-purple-700 p-3 rounded"
             />
 
             <input
               placeholder="Area of Interest"
+              value={form.interest}
+              onChange={(e) => setForm({ ...form, interest: e.target.value })}
               className="bg-transparent border border-purple-700 p-3 rounded"
             />
 
@@ -92,11 +112,39 @@ export default function ContactPage() {
 
           <textarea
             placeholder="Tell us about your project..."
+            value={form.message}
+            onChange={(e) => setForm({ ...form, message: e.target.value })}
             className="w-full bg-transparent border border-purple-700 p-3 rounded h-[150px] mb-4"
           />
 
-          <button className="w-full bg-purple-600 py-3 rounded">
-            Send Message →
+          <button
+            disabled={loading}
+            onClick={async () => {
+              setLoading(true);
+
+              const res = await fetch("/api/contact", {
+                method: "POST",
+                body: JSON.stringify(form),
+              });
+
+              if (res.ok) {
+                alert("Message sent successfully");
+                setForm({
+                  name: "",
+                  email: "",
+                  company: "",
+                  interest: "",
+                  message: "",
+                });
+              } else {
+                alert("Failed to send message");
+              }
+
+              setLoading(false);
+            }}
+            className="w-full bg-purple-600 py-3 rounded"
+          >
+            {loading ? "Sending..." : "Send Message →"}
           </button>
 
         </div>
