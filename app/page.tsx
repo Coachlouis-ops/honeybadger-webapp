@@ -208,7 +208,7 @@ export default function HomePage() {
         A web-based platform allowing customers to browse, order, and manage supplier interactions online.
       </p>
 
-      <a href="https://middelburgbearingsandtransmission.co.co" target="_blank" className="text-purple-400">
+      <a href="https://middelburgbearingsandtransmission.co.za" target="_blank" className="text-purple-400">
         Open Web App →
       </a>
     </div>
