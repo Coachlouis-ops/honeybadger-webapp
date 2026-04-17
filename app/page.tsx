@@ -129,132 +129,149 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ================= PLATFORMS ================= */}
-      <section className="px-8 pb-20">
-        <h2 className="text-4xl font-bold mb-10">Current Live Platforms</h2>
+    {/* ================= PLATFORMS ================= */}
+<section className="px-8 pb-20">
+  <h2 className="text-4xl font-bold mb-10">Current Live Platforms</h2>
 
-        <div className="space-y-10">
+  <div className="space-y-10">
 
-          {/* TEEZ - FLAGSHIP */}
-          <div className="border border-purple-500 p-6 rounded-lg">
-            <img src="/teez_logo.png" className="h-16 mb-4" />
+    {/* TEEZ - FLAGSHIP */}
+    <div className="border border-purple-500 p-6 rounded-lg">
+      <img src="/teez_logo.png" className="h-16 mb-4" />
 
-            <h3 className="text-2xl font-bold mb-2">Teez Golf Challenges</h3>
+      <h3 className="text-2xl font-bold mb-2">Teez Golf Challenges</h3>
 
-            <p className="text-sm text-purple-400 mb-2">
-              Target Market: Global amateur and professional golfers
-            </p>
+      <p className="text-sm text-purple-400 mb-2">
+        Target Market: Global amateur and professional golfers
+      </p>
 
-            <p className="text-gray-300 mb-4">
-              A global skill-based golf competition platform where players enter challenges using digital tokens,
-              compete based on performance, and earn rewards. The platform operates on a digital entry system and
-              does not involve betting or gambling.
-            </p>
+      <p className="text-gray-300 mb-4">
+        A global skill-based golf competition platform where players enter challenges using digital tokens,
+        compete based on performance, and earn rewards. The platform operates on a digital entry system and
+        does not involve betting or gambling.
+      </p>
 
-            <a href="https://www.teezgolfchallenges.com" target="_blank" className="text-purple-400">
-              Visit Platform →
-            </a>
-          </div>
+      <a href="https://www.teezgolfchallenges.com" target="_blank" className="text-purple-400">
+        Visit Platform →
+      </a>
+    </div>
 
-          {/* VECTOR CARTS */}
-          <div className="border border-purple-700 p-6 rounded-lg">
-            <img src="/vector_logo.png" className="h-16 mb-4" />
+    {/* VECTOR CARTS */}
+    <div className="border border-purple-700 p-6 rounded-lg">
+      <img src="/vector_logo.png" className="h-16 mb-4" />
 
-            <h3 className="text-2xl font-bold mb-2">Vector Carts</h3>
+      <h3 className="text-2xl font-bold mb-2">Vector Carts</h3>
 
-            <p className="text-sm text-purple-400 mb-2">
-              Target Market: Golf estates, resorts, and private buyers
-            </p>
+      <p className="text-sm text-purple-400 mb-2">
+        Target Market: Golf estates, resorts, and private buyers
+      </p>
 
-            <p className="text-gray-300 mb-4">
-              A digital platform showcasing and selling premium electric golf carts, providing customers with
-              product information, customization options, and purchase inquiries.
-            </p>
+      <p className="text-gray-300 mb-4">
+        A digital platform showcasing and selling premium electric golf carts.
+      </p>
 
-            <a href="https://vectorcarts.co.za" target="_blank" className="text-purple-400">
-              Visit Website →
-            </a>
-          </div>
+      <a href="https://vectorcarts.co.za" target="_blank" className="text-purple-400">
+        Visit Website →
+      </a>
+    </div>
 
-          {/* MBT WEBSITE */}
-          <div className="border border-purple-700 p-6 rounded-lg">
-            <img src="/mbt_website.png" className="h-16 mb-4" />
+    {/* MBT WEBSITE (FIXED NAME) */}
+    <div className="border border-purple-700 p-6 rounded-lg">
+      <img src="/mbt_wedsite.png" className="h-16 mb-4" />
 
-            <h3 className="text-2xl font-bold mb-2">Middelburg Bearings Website</h3>
+      <h3 className="text-2xl font-bold mb-2">Middelburg Bearings Website</h3>
 
-            <p className="text-sm text-purple-400 mb-2">
-              Target Market: Industrial and mechanical supply clients
-            </p>
+      <p className="text-sm text-purple-400 mb-2">
+        Target Market: Industrial and mechanical supply clients
+      </p>
 
-            <p className="text-gray-300 mb-4">
-              A business website for an industrial supplier, providing product listings, company information,
-              and customer contact channels.
-            </p>
+      <p className="text-gray-300 mb-4">
+        A business website providing product listings and supplier access.
+      </p>
 
-            <a href="https://middelburgbearingsandtransmission.com" target="_blank" className="text-purple-400">
-              Visit Website →
-            </a>
-          </div>
+      <a href="https://middelburgbearingsandtransmission.com" target="_blank" className="text-purple-400">
+        Visit Website →
+      </a>
+    </div>
 
-          {/* MBT ANDROID */}
-          <div className="border border-purple-700 p-6 rounded-lg">
-            <img src="/middelburg_app.png" className="h-16 mb-4" />
+    {/* MBT WEB APP (ADDED) */}
+    <div className="border border-purple-700 p-6 rounded-lg">
+      <img src="/middelburg_web.png" className="h-16 mb-4" />
 
-            <h3 className="text-2xl font-bold mb-2">Middelburg Bearings App</h3>
+      <h3 className="text-2xl font-bold mb-2">Middelburg Bearings Web App</h3>
 
-            <p className="text-sm text-purple-400 mb-2">
-              Target Market: Existing industrial customers and field buyers
-            </p>
+      <p className="text-sm text-purple-400 mb-2">
+        Target Market: Industrial customers and procurement teams
+      </p>
 
-            <p className="text-gray-300 mb-4">
-              A mobile application enabling customers to browse products, place orders, and interact with the supplier directly.
-            </p>
+      <p className="text-gray-300 mb-4">
+        A web-based platform allowing customers to browse, order, and manage supplier interactions online.
+      </p>
 
-            <a href="https://play.google.com/store/apps/details?id=com.middelburgbearings.app&pcampaignid=web_share" target="_blank" className="text-purple-400">
-              View on Play Store →
-            </a>
-          </div>
+      <a href="https://middelburgbearingsandtransmission.co.co" target="_blank" className="text-purple-400">
+        Open Web App →
+      </a>
+    </div>
 
-          {/* JOY APP */}
-          <div className="border border-purple-700 p-6 rounded-lg">
-            <img src="/joy_app.png" className="h-16 mb-4" />
+    {/* MBT ANDROID */}
+    <div className="border border-purple-700 p-6 rounded-lg">
+      <img src="/middelburg_app.png" className="h-16 mb-4" />
 
-            <h3 className="text-2xl font-bold mb-2">Joy Furniture App</h3>
+      <h3 className="text-2xl font-bold mb-2">Middelburg Bearings App</h3>
 
-            <p className="text-sm text-purple-400 mb-2">
-              Target Market: Retail furniture customers
-            </p>
+      <p className="text-sm text-purple-400 mb-2">
+        Target Market: Existing industrial customers and field buyers
+      </p>
 
-            <p className="text-gray-300 mb-4">
-              A mobile platform allowing customers to browse furniture, view pricing, and engage with the business digitally.
-            </p>
+      <p className="text-gray-300 mb-4">
+        A mobile application enabling product browsing and ordering.
+      </p>
 
-            <a href="https://play.google.com/store/apps/details?id=com.honeybadger.joyfurniture2024&pcampaignid=web_share" target="_blank" className="text-purple-400">
-              View on Play Store →
-            </a>
-          </div>
+      <a href="https://play.google.com/store/apps/details?id=com.middelburgbearings.app&pcampaignid=web_share" target="_blank" className="text-purple-400">
+        View on Play Store →
+      </a>
+    </div>
 
-          {/* FURNISEARCH */}
-          <div className="border border-purple-700 p-6 rounded-lg">
-            <img src="/funrisearch_web.png" className="h-16 mb-4" />
+    {/* JOY APP */}
+    <div className="border border-purple-700 p-6 rounded-lg">
+      <img src="/joy_app.png" className="h-16 mb-4" />
 
-            <h3 className="text-2xl font-bold mb-2">Furnisearch</h3>
+      <h3 className="text-2xl font-bold mb-2">Joy Furniture App</h3>
 
-            <p className="text-sm text-purple-400 mb-2">
-              Target Market: Furniture buyers and suppliers
-            </p>
+      <p className="text-sm text-purple-400 mb-2">
+        Target Market: Retail furniture customers
+      </p>
 
-            <p className="text-gray-300 mb-4">
-              A furniture search and lead-generation platform connecting customers with suppliers through advanced filtering and inquiry systems.
-            </p>
+      <p className="text-gray-300 mb-4">
+        A mobile platform for browsing and engaging with furniture products.
+      </p>
 
-            <a href="https://www.furnisearch.co.za" target="_blank" className="text-purple-400">
-              Visit Platform →
-            </a>
-          </div>
+      <a href="https://play.google.com/store/apps/details?id=com.honeybadger.joyfurniture2024&pcampaignid=web_share" target="_blank" className="text-purple-400">
+        View on Play Store →
+      </a>
+    </div>
 
-        </div>
-      </section>
+    {/* FURNISEARCH (FIXED NAME) */}
+    <div className="border border-purple-700 p-6 rounded-lg">
+      <img src="/furnisearch_web.png" className="h-16 mb-4" />
+
+      <h3 className="text-2xl font-bold mb-2">Furnisearch</h3>
+
+      <p className="text-sm text-purple-400 mb-2">
+        Target Market: Furniture buyers and suppliers
+      </p>
+
+      <p className="text-gray-300 mb-4">
+        A furniture search and lead-generation platform connecting customers with suppliers.
+      </p>
+
+      <a href="https://www.furnisearch.co.za" target="_blank" className="text-purple-400">
+        Visit Platform →
+      </a>
+    </div>
+
+  </div>
+</section>
 
       {/* ================= CTA ================= */}
       <section className="px-8 py-20 border-t border-purple-800 flex justify-between items-center flex-col md:flex-row gap-6">
