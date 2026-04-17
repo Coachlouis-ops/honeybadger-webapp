@@ -284,13 +284,12 @@ export default function HomePage() {
           </p>
         </div>
 
-        <a
-          href="https://wa.me/27828370266"
-          target="_blank"
-          className="bg-purple-600 px-6 py-3 rounded"
-        >
-          Start a Conversation →
-        </a>
+       <a
+  onClick={() => router.push("/contact")}
+  className="bg-purple-600 px-6 py-3 rounded cursor-pointer"
+>
+  Start a Conversation →
+</a>
       </section>
 
       {/* ================= FOOTER ================= */}
