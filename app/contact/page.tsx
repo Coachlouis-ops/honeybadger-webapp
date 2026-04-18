@@ -1,8 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function ContactPage() {
+  const router = useRouter();
+
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -15,6 +18,14 @@ export default function ContactPage() {
 
   return (
     <main className="bg-[#0b071d] text-white px-6 md:px-16 py-16">
+
+      {/* BACK BUTTON */}
+      <button
+        onClick={() => router.push("/")}
+        className="mb-6 text-sm text-purple-400"
+      >
+        ← Back to Home
+      </button>
 
       {/* HERO */}
       <section className="max-w-5xl">
@@ -55,7 +66,6 @@ export default function ContactPage() {
 
           </div>
 
-          {/* SERVICES */}
           <div className="mt-10">
             <h3 className="font-bold mb-4">We Can Help With</h3>
 
@@ -68,7 +78,6 @@ export default function ContactPage() {
               <li>System Integration & APIs</li>
             </ul>
           </div>
-
         </div>
 
         {/* FORM */}
@@ -122,13 +131,19 @@ export default function ContactPage() {
             onClick={async () => {
               setLoading(true);
 
-              const res = await fetch("/api/contact", {
-                method: "POST",
-                body: JSON.stringify(form),
-              });
+              try {
+                const res = await fetch("/api/contact", {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify(form),
+                });
 
-              if (res.ok) {
+                if (!res.ok) throw new Error("Failed");
+
                 alert("Message sent successfully");
+
                 setForm({
                   name: "",
                   email: "",
@@ -136,7 +151,8 @@ export default function ContactPage() {
                   interest: "",
                   message: "",
                 });
-              } else {
+              } catch (err) {
+                console.error(err);
                 alert("Failed to send message");
               }
 
