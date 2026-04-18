@@ -16,7 +16,9 @@ export async function POST(req: Request) {
 
     const response = await resend.emails.send({
       from: "Honey Badger <info@honeybadgertech.com>",
-      to: ["info@honeybadgertech.com"],
+     to: [
+  "honeybadgerapps5@gmail.com"
+],
       subject: "New Contact Form Submission",
       html: `
         <h2>New Contact Submission</h2>
