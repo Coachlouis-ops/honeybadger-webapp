@@ -15,6 +15,7 @@ export default function ContactPage() {
   });
 
   const [loading, setLoading] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
 
   return (
     <main className="bg-[#0b071d] text-white px-6 md:px-16 py-16">
@@ -26,6 +27,26 @@ export default function ContactPage() {
       >
         ← Back to Home
       </button>
+
+      {/* SUCCESS POPUP */}
+      {showSuccess && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black/70 z-50">
+          <div className="bg-[#0b071d] border border-purple-700 p-8 rounded text-center max-w-sm">
+            <h2 className="text-xl font-bold mb-4 text-purple-400">
+              Message Sent
+            </h2>
+            <p className="text-gray-300 mb-6">
+              We will get in touch as soon as possible.
+            </p>
+            <button
+              onClick={() => setShowSuccess(false)}
+              className="bg-purple-600 px-6 py-2 rounded"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* HERO */}
       <section className="max-w-5xl">
@@ -142,7 +163,7 @@ export default function ContactPage() {
 
                 if (!res.ok) throw new Error("Failed");
 
-                alert("Message sent successfully");
+                setShowSuccess(true);
 
                 setForm({
                   name: "",
@@ -153,7 +174,7 @@ export default function ContactPage() {
                 });
               } catch (err) {
                 console.error(err);
-                alert("Failed to send message");
+                alert("Failed to send message. Please try again.");
               }
 
               setLoading(false);
