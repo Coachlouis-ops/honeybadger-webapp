@@ -7,9 +7,14 @@ export async function POST(req: Request) {
 
     const { name, email, company, interest, message } = body;
 
+    if (!process.env.RESEND_API_KEY) {
+      console.error("Missing RESEND_API_KEY");
+      return NextResponse.json({ success: false, error: "Missing API key" }, { status: 500 });
+    }
+
     const resend = new Resend(process.env.RESEND_API_KEY);
 
-    await resend.emails.send({
+    const response = await resend.emails.send({
       from: "Honey Badger <info@honeybadgertech.com>",
       to: ["info@honeybadgertech.com"],
       subject: "New Contact Form Submission",
@@ -23,8 +28,11 @@ export async function POST(req: Request) {
       `,
     });
 
+    console.log("RESEND RESPONSE:", response);
+
     return NextResponse.json({ success: true });
   } catch (error) {
-    return NextResponse.json({ success: false, error });
+    console.error("CONTACT ERROR:", error);
+    return NextResponse.json({ success: false, error: "Failed to send" }, { status: 500 });
   }
 }
