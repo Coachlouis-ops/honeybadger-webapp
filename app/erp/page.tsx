@@ -38,23 +38,25 @@ export default function ERPPage() {
         />
       </section>
 
-      {/* LIFECYCLE DIAGRAM */}
-      <section className="mt-16 text-center">
-        <h2 className="text-2xl font-bold mb-6">
-          Full Business Lifecycle Integration
-        </h2>
+ {/* ERP DIAGRAM */}
+<section className="mt-16">
+  <h2 className="text-2xl font-bold mb-6">
+    Operational Lifecycle Overview
+  </h2>
 
-        <img
-          src="/erp_lifecycle.png"
-          alt="ERP Lifecycle Diagram"
-          className="mx-auto w-full max-w-4xl rounded border border-purple-700"
-        />
+  <p className="text-gray-300 max-w-3xl mb-6">
+    The system connects the full business lifecycle — from customer enquiry to financial reporting — 
+    ensuring complete visibility and control across operations.
+  </p>
 
-        <p className="text-gray-400 text-sm mt-4 max-w-3xl mx-auto">
-          The system connects stock flow, sales processes, and financial management into one
-          continuous operational loop, ensuring real-time visibility and control across the business.
-        </p>
-      </section>
+  <div className="border border-purple-700 rounded overflow-hidden">
+    <img
+      src="/erp_dia.png"
+      alt="Furniture ERP Lifecycle Diagram"
+      className="w-full object-cover"
+    />
+  </div>
+</section>
 
       {/* EXPLANATION */}
       <section className="mt-16 grid md:grid-cols-3 gap-6">
