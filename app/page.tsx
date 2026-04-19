@@ -1,9 +1,17 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import { useState, useEffect } from "react";
 
 export default function HomePage() {
   const router = useRouter();
+
+  const [showCookies, setShowCookies] = useState(false);
+
+  useEffect(() => {
+    const accepted = localStorage.getItem("cookiesAccepted");
+    if (!accepted) setShowCookies(true);
+  }, []);
 
   return (
     <main className="bg-[#0b071d] text-white">
@@ -29,6 +37,9 @@ export default function HomePage() {
     <button onClick={() => router.push("/solutions")}>Solutions</button>
     <button onClick={() => router.push("/portfolio")}>Portfolio</button>
     <button onClick={() => router.push("/about")}>About</button>
+
+    <button onClick={() => router.push("/privacy")}>Privacy</button>
+    <button onClick={() => router.push("/terms")}>Terms</button>
 
     <a
       onClick={() => router.push("/contact")}
@@ -339,16 +350,33 @@ export default function HomePage() {
         <div>
           <h4 className="font-bold mb-4">Company</h4>
           <ul className="space-y-2 text-gray-400">
-            <li>Portfolio</li>
-            <li>Industries</li>
-            <li>
-              <a href="mailto:info@honeybadgertech.com">Contact</a>
-            </li>
-            <li>Privacy Policy</li>
+            <li onClick={() => router.push("/portfolio")} className="cursor-pointer">Portfolio</li>
+            <li onClick={() => router.push("/contact")} className="cursor-pointer">Contact</li>
+            <li onClick={() => router.push("/privacy")} className="cursor-pointer">Privacy Policy</li>
+            <li onClick={() => router.push("/terms")} className="cursor-pointer">Terms & Conditions</li>
           </ul>
         </div>
 
       </footer>
+
+      {/* ================= COOKIE BANNER ================= */}
+      {showCookies && (
+        <div className="fixed bottom-0 left-0 w-full bg-black border-t border-purple-800 px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4 z-50">
+          <p className="text-sm text-gray-300 max-w-xl">
+            We use cookies to improve your experience, analyse traffic, and support our platforms.
+          </p>
+
+          <button
+            onClick={() => {
+              localStorage.setItem("cookiesAccepted", "true");
+              setShowCookies(false);
+            }}
+            className="bg-purple-600 px-6 py-2 rounded"
+          >
+            Accept
+          </button>
+        </div>
+      )}
 
     </main>
   );
