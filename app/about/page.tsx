@@ -1,8 +1,20 @@
 "use client";
 
+import { useRouter } from "next/navigation";
+
 export default function AboutPage() {
+  const router = useRouter();
+
   return (
     <main className="bg-[#0b071d] text-white px-6 md:px-16 py-16">
+
+      {/* BACK BUTTON */}
+      <button
+        onClick={() => router.push("/")}
+        className="mb-6 text-sm text-purple-400"
+      >
+        ← Back to Home
+      </button>
 
       {/* HERO */}
       <section className="max-w-5xl">
@@ -13,7 +25,9 @@ export default function AboutPage() {
         </h1>
 
         <p className="text-gray-300 mt-6 max-w-3xl">
-          Honey Badger Technologies is a South African technology company that builds the platforms, systems, and products that power serious businesses. We don't do half-measures — we build things that work, scale, and endure.
+          Honey Badger Technologies is a South African technology company that builds, owns, and operates
+          digital platforms and systems used by businesses globally. Our focus is on creating scalable,
+          revenue-generating products and operational systems that perform in real environments.
         </p>
       </section>
 
@@ -22,15 +36,18 @@ export default function AboutPage() {
 
         <div>
           <h2 className="text-2xl font-bold mb-4">
-            Technology that moves businesses forward — not just ticks boxes.
+            Technology that drives real business outcomes.
           </h2>
 
           <p className="text-gray-300">
-            Too many projects deliver software that technically works but doesn't actually solve the problem. We embed deeply in your operational context and build systems that fix it properly.
+            Most software projects fail because they are built without understanding real operational needs.
+            We approach development differently — by embedding into the business context and engineering
+            systems that directly support revenue, efficiency, and scalability.
           </p>
 
           <p className="text-gray-300 mt-4">
-            Our work spans business systems, digital platforms, AI automation, and integrations — always focused on measurable impact.
+            Our work spans digital platforms, internal enterprise systems, automation, and integrations —
+            always focused on measurable performance and long-term value.
           </p>
         </div>
 
@@ -65,31 +82,34 @@ export default function AboutPage() {
 
           <div className="border border-purple-700 p-4">
             <h4 className="text-purple-400 mb-2">04</h4>
-            <p>Honest Partnership</p>
+            <p>Execution Over Theory</p>
           </div>
 
         </div>
       </section>
 
-      {/* STORY */}
+      {/* POSITIONING (REPLACES OLD TIMELINE) */}
       <section className="mt-20 grid md:grid-cols-2 gap-10 items-center">
 
         <div>
           <h2 className="text-3xl font-bold mb-6">
-            From a small team with a clear point of view.
+            We don’t just build software — we build platforms that operate.
           </h2>
 
           <p className="text-gray-300">
-            Founded to build systems that actually work in production — not just deliver projects. We measure success by outcomes.
+            Honey Badger Technologies develops and manages multiple live platforms across industries,
+            including global digital products, e-commerce systems, and internal enterprise software.
           </p>
 
-          <div className="mt-6 space-y-3 text-sm text-gray-300">
-            <p><span className="text-purple-400">2016</span> Founded in South Africa</p>
-            <p><span className="text-purple-400">2018</span> Digital products expansion</p>
-            <p><span className="text-purple-400">2020</span> AI & Data practice</p>
-            <p><span className="text-purple-400">2022</span> International clients</p>
-            <p><span className="text-purple-400">2024</span> 50+ platforms delivered</p>
-          </div>
+          <p className="text-gray-300 mt-4">
+            Each platform is designed with a clear commercial model — whether through subscriptions,
+            transactions, or lead generation — ensuring that the technology directly supports business growth.
+          </p>
+
+          <p className="text-gray-300 mt-4">
+            Our flagship platform, Teez Golf Challenges, demonstrates this approach — a global system
+            combining competition, digital assets, and user engagement at scale.
+          </p>
         </div>
 
         <img
@@ -109,13 +129,13 @@ export default function AboutPage() {
         </div>
 
         <div>
-          <h4 className="font-bold mb-2">Full-Stack Capability</h4>
-          <p className="text-gray-300">End-to-end technology delivery.</p>
+          <h4 className="font-bold mb-2">Platform Ownership Model</h4>
+          <p className="text-gray-300">We build and operate revenue-generating systems.</p>
         </div>
 
         <div>
-          <h4 className="font-bold mb-2">Long-Term Partnerships</h4>
-          <p className="text-gray-300">We build relationships, not just software.</p>
+          <h4 className="font-bold mb-2">End-to-End Delivery</h4>
+          <p className="text-gray-300">From architecture to deployment and scaling.</p>
         </div>
 
       </section>
