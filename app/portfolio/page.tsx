@@ -22,7 +22,30 @@ export default function PortfolioPage() {
       </section>
 
       {/* ================= PLATFORMS ================= */}
-      <section className="mt-16 space-y-10">
+<section className="mt-16 space-y-10">
+
+{/* ERP SYSTEM */}
+<div className="border border-purple-500 p-6 rounded-lg">
+  <img src="/appshortcut.png" className="h-16 mb-4" />
+
+  <h3 className="text-2xl font-bold mb-2">Furniture ERP System</h3>
+
+  <p className="text-sm text-purple-400 mb-2">
+    Internal enterprise system
+  </p>
+
+  <p className="text-gray-300 mb-4">
+    A custom-built ERP platform used to manage quotations, invoicing, payments, and sales operations across multiple business units.
+    Designed for real-world workflows and daily operational control.
+  </p>
+
+  <button
+    onClick={() => router.push("/erp")}
+    className="text-purple-400"
+  >
+    View System →
+  </button>
+</div>
 
         {/* TEEZ */}
         <div className="border border-purple-500 p-6 rounded-lg">

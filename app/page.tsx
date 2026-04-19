@@ -270,6 +270,30 @@ export default function HomePage() {
       </a>
     </div>
 
+{/* ERP SYSTEM */}
+<div className="border border-purple-700 p-6 rounded-lg">
+  <img src="/appshortcut.png" className="h-16 mb-4" />
+
+  <h3 className="text-2xl font-bold mb-2">Furniture ERP System</h3>
+
+  <p className="text-sm text-purple-400 mb-2">
+    Internal business management platform
+  </p>
+
+  <p className="text-gray-300 mb-4">
+    A custom-built enterprise system used to manage quotations, invoices, payments, stock,
+    and sales team performance across multiple business units.
+  </p>
+
+  <button
+    onClick={() => router.push("/erp")}
+    className="text-purple-400"
+  >
+    View System →
+  </button>
+</div>
+
+
   </div>
 </section>
 
