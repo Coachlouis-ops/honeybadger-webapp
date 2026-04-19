@@ -320,7 +320,7 @@ export default function HomePage() {
       <footer className="px-8 py-16 border-t border-purple-800 grid md:grid-cols-3 gap-10">
 
         <div>
-          <h3 className="font-bold mb-4">HONEY BADGER TECHNOLOGIES</h3>
+          <h3 className="font-bold mb-4">HONEY BADGER TECHNOLOGIES PTY LTD</h3>
           <p className="text-gray-400">
             Developing and operating global digital platforms.
           </p>
