@@ -10,154 +10,202 @@ export default function SolutionsPage() {
 
       {/* HERO */}
       <section className="max-w-5xl">
-        <p className="text-purple-400 text-sm mb-4">WHAT WE BUILD</p>
+        <p className="text-purple-400 text-sm mb-4">WHAT WE DO</p>
 
         <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-          Solutions That <span className="text-purple-500">Scale.</span>
+          We Build & Operate <span className="text-purple-500">Real Systems.</span>
         </h1>
 
         <p className="text-gray-300 mt-6 max-w-3xl">
-          We don't build generic software. Every platform, system, and product we deliver is engineered for your specific operational context — designed to grow with your business and generate measurable returns.
+          Honey Badger Technologies develops and operates production-grade platforms and internal systems.
+          These are not concepts — they are live environments handling real users, transactions, and business operations.
         </p>
       </section>
 
-      {/* SECTION BLOCK */}
-      <div className="mt-16 space-y-10">
+      {/* ================= BUSINESS SYSTEMS ================= */}
+      <section className="mt-16 border border-purple-700 p-6 rounded">
+        <h2 className="text-2xl font-bold mb-4">01 Business Support Systems</h2>
 
-        {/* 01 */}
-        <div className="border border-purple-700 p-6 rounded">
-          <h2 className="text-2xl font-bold mb-4">01 Business Support Systems</h2>
+        <p className="text-gray-300 mb-6">
+          Internal systems designed to run real business operations — from sales to financial tracking and reporting.
+        </p>
 
-          <p className="text-gray-300 mb-4">
-            End-to-end BSS platforms that modernise how businesses operate.
-          </p>
+        <div className="grid md:grid-cols-2 gap-6 text-sm">
 
-          <div className="grid md:grid-cols-2 gap-6 text-sm">
-            <div>
-              <h4 className="text-purple-400 mb-2">Capabilities</h4>
-              <ul className="space-y-1 text-gray-300">
-                <li>Billing & Revenue Management</li>
-                <li>Customer Lifecycle Management</li>
-                <li>Order & Fulfilment Management</li>
-                <li>Workflow Automation</li>
-                <li>Third-party API Integration</li>
-                <li>Real-time Reporting</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-purple-400 mb-2">Industries</h4>
-              <p className="text-gray-300">Telecoms • Finance • SaaS • Enterprise</p>
-            </div>
+          <div>
+            <h4 className="text-purple-400 mb-2">Capabilities</h4>
+            <ul className="space-y-1 text-gray-300">
+              <li>Quotation & Invoice Management</li>
+              <li>Payment Tracking</li>
+              <li>Sales Team Performance</li>
+              <li>Workflow Automation</li>
+              <li>Multi-company Management</li>
+            </ul>
           </div>
-        </div>
 
-        {/* 02 */}
-        <div className="border border-purple-700 p-6 rounded">
-          <h2 className="text-2xl font-bold mb-4">02 Digital Platforms & Products</h2>
+          <div>
+            <h4 className="text-purple-400 mb-2">Live System</h4>
+            <p className="text-gray-300 mb-4">
+              Custom-built Furniture ERP system used to manage real operational workflows.
+            </p>
 
-          <p className="text-gray-300 mb-4">
-            Platforms that create new revenue streams and competitive advantages.
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-6 text-sm">
-            <div>
-              <h4 className="text-purple-400 mb-2">Capabilities</h4>
-              <ul className="space-y-1 text-gray-300">
-                <li>SaaS Development</li>
-                <li>Marketplaces</li>
-                <li>Web Apps</li>
-                <li>Mobile Apps</li>
-                <li>API Development</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-purple-400 mb-2">Industries</h4>
-              <p className="text-gray-300">E-commerce • Media • Retail • Services</p>
-            </div>
+            <button
+              onClick={() => router.push("/erp")}
+              className="text-purple-400"
+            >
+              View ERP System →
+            </button>
           </div>
+
         </div>
+      </section>
 
-        {/* 03 */}
-        <div className="border border-purple-700 p-6 rounded">
-          <h2 className="text-2xl font-bold mb-4">03 AI-Driven Solutions</h2>
+      {/* ================= DIGITAL PLATFORMS ================= */}
+      <section className="mt-10 border border-purple-700 p-6 rounded">
+        <h2 className="text-2xl font-bold mb-4">02 Digital Platforms</h2>
 
-          <p className="text-gray-300 mb-4">
-            AI systems that create real operational advantage.
-          </p>
+        <p className="text-gray-300 mb-6">
+          Revenue-generating platforms built for global and local markets.
+        </p>
 
-          <div className="grid md:grid-cols-2 gap-6 text-sm">
-            <div>
-              <h4 className="text-purple-400 mb-2">Capabilities</h4>
-              <ul className="space-y-1 text-gray-300">
-                <li>Predictive Analytics</li>
-                <li>Automation</li>
-                <li>NLP</li>
-                <li>Recommendation Engines</li>
-              </ul>
-            </div>
+        <div className="grid md:grid-cols-2 gap-6 text-sm">
 
-            <div>
-              <h4 className="text-purple-400 mb-2">Industries</h4>
-              <p className="text-gray-300">Retail • Finance • Logistics • Healthcare</p>
-            </div>
+          <div>
+            <h4 className="text-purple-400 mb-2">Capabilities</h4>
+            <ul className="space-y-1 text-gray-300">
+              <li>Web Applications</li>
+              <li>Mobile Applications</li>
+              <li>Subscription Systems</li>
+              <li>Payment Integrations</li>
+              <li>Marketplace & Lead Platforms</li>
+            </ul>
           </div>
-        </div>
 
-        {/* 04 */}
-        <div className="border border-purple-700 p-6 rounded">
-          <h2 className="text-2xl font-bold mb-4">04 System Integration & APIs</h2>
+          <div>
+            <h4 className="text-purple-400 mb-2">Live Platforms</h4>
+            <ul className="space-y-2 text-gray-300">
+              <li>Teez Golf Challenges (Global Platform)</li>
+              <li>Furnisearch (Lead Generation Platform)</li>
+              <li>Vector Carts (E-commerce Platform)</li>
+            </ul>
 
-          <p className="text-gray-300 mb-4">
-            Connecting systems into a unified architecture.
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-6 text-sm">
-            <div>
-              <h4 className="text-purple-400 mb-2">Capabilities</h4>
-              <ul className="space-y-1 text-gray-300">
-                <li>REST & GraphQL APIs</li>
-                <li>Legacy Integration</li>
-                <li>Microservices</li>
-                <li>Data Sync</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-purple-400 mb-2">Industries</h4>
-              <p className="text-gray-300">Enterprise • Government • Logistics</p>
-            </div>
+            <button
+              onClick={() => router.push("/portfolio")}
+              className="text-purple-400 mt-4"
+            >
+              View Platforms →
+            </button>
           </div>
+
         </div>
+      </section>
 
-      </div>
+      {/* ================= AI ================= */}
+      <section className="mt-10 border border-purple-700 p-6 rounded">
+        <h2 className="text-2xl font-bold mb-4">03 AI-Driven Systems</h2>
 
-      {/* PROCESS */}
+        <p className="text-gray-300 mb-6">
+          Automation and intelligence layers integrated into operational systems.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-6 text-sm">
+
+          <div>
+            <h4 className="text-purple-400 mb-2">Capabilities</h4>
+            <ul className="space-y-1 text-gray-300">
+              <li>Process Automation</li>
+              <li>Data Analysis</li>
+              <li>Workflow Optimisation</li>
+              <li>Decision Support Systems</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-purple-400 mb-2">Application</h4>
+            <p className="text-gray-300">
+              AI is embedded into business systems to reduce manual work and improve operational speed.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ================= INTEGRATION ================= */}
+      <section className="mt-10 border border-purple-700 p-6 rounded">
+        <h2 className="text-2xl font-bold mb-4">04 System Integration</h2>
+
+        <p className="text-gray-300 mb-6">
+          Connecting multiple systems into one unified operational flow.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-6 text-sm">
+
+          <div>
+            <h4 className="text-purple-400 mb-2">Capabilities</h4>
+            <ul className="space-y-1 text-gray-300">
+              <li>API Development</li>
+              <li>Payment Gateways (Stripe, PayFast)</li>
+              <li>Firebase & Cloud Systems</li>
+              <li>Database Architecture</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-purple-400 mb-2">Outcome</h4>
+            <p className="text-gray-300">
+              Systems operate as a single environment instead of disconnected tools.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ================= PROCESS ================= */}
       <section className="mt-20">
-        <h2 className="text-3xl font-bold mb-10">Our Process</h2>
+        <h2 className="text-3xl font-bold mb-10">Execution Model</h2>
 
         <div className="grid md:grid-cols-4 gap-6 text-sm">
           <div>
-            <h4 className="text-purple-400 mb-2">01 Discovery</h4>
-            <p className="text-gray-300">Understand business and technical context.</p>
+            <h4 className="text-purple-400 mb-2">01 Design</h4>
+            <p className="text-gray-300">Structure the system before build.</p>
           </div>
 
           <div>
-            <h4 className="text-purple-400 mb-2">02 Architecture</h4>
-            <p className="text-gray-300">Design systems before development.</p>
+            <h4 className="text-purple-400 mb-2">02 Build</h4>
+            <p className="text-gray-300">Develop real working systems.</p>
           </div>
 
           <div>
-            <h4 className="text-purple-400 mb-2">03 Build</h4>
-            <p className="text-gray-300">Iterative agile delivery.</p>
+            <h4 className="text-purple-400 mb-2">03 Deploy</h4>
+            <p className="text-gray-300">Launch into production.</p>
           </div>
 
           <div>
-            <h4 className="text-purple-400 mb-2">04 Deploy</h4>
-            <p className="text-gray-300">Launch and scale with support.</p>
+            <h4 className="text-purple-400 mb-2">04 Operate</h4>
+            <p className="text-gray-300">Maintain and scale systems.</p>
           </div>
         </div>
+      </section>
+
+      {/* ================= CTA ================= */}
+      <section className="mt-20 border-t border-purple-800 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
+
+        <div>
+          <h2 className="text-3xl font-bold">
+            Ready to build a <span className="text-purple-500">real system?</span>
+          </h2>
+          <p className="text-gray-300 mt-2">
+            Let’s discuss your platform or business system.
+          </p>
+        </div>
+
+        <button
+          onClick={() => router.push("/contact")}
+          className="bg-purple-600 px-6 py-3 rounded"
+        >
+          Start a Conversation →
+        </button>
+
       </section>
 
     </main>
