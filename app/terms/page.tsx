@@ -14,61 +14,132 @@ export default function TermsPage() {
 
       <h1 className="text-3xl font-bold mb-6">Terms & Conditions</h1>
 
-      <div className="space-y-4 text-sm text-gray-300 max-w-4xl">
+      <div className="space-y-6 text-sm text-gray-300 max-w-4xl">
 
         <p>
-          These Terms govern the use of services, platforms, and systems operated by
-          <strong> Honey Badger Technologies (PTY) LTD</strong> (Registration: 2026/102722/07).
+          This website is operated by <strong>Honey Badger Technologies (PTY) LTD</strong> 
+          (Registration Number: 2026/102722/07).
+        </p>
+
+        {/* DESCRIPTION */}
+        <h2 className="text-white font-semibold">1. Description of Services</h2>
+        <p>
+          Honey Badger Technologies develops and operates digital platforms, including Teez Golf Challenges,
+          providing access to skill-based competitions, memberships, and digital services.
+        </p>
+
+        {/* AVAILABILITY */}
+        <h2 className="text-white font-semibold">2. Availability</h2>
+        <p>
+          Services are subject to availability. In cases of unavailability, customers will be refunded
+          in full within 30 days.
+        </p>
+
+        {/* DELIVERY */}
+        <h2 className="text-white font-semibold">3. Delivery Policy</h2>
+        <p>
+          Digital services such as memberships and tokens are delivered immediately upon successful payment
+          confirmation. Delivery is confirmed via system access and/or email notification.
+        </p>
+
+        {/* REFUNDS */}
+        <h2 className="text-white font-semibold">4. Returns & Refunds Policy</h2>
+        <p>
+          All digital purchases are final. Refunds are only issued in cases of system error, duplicate
+          transactions, or where required by law.
+        </p>
+
+        {/* PAYMENTS */}
+        <h2 className="text-white font-semibold">5. Payment Methods</h2>
+        <p>
+          Payment may be made via Visa, MasterCard, American Express or other supported methods.
         </p>
 
         <p>
-          Honey Badger Technologies develops, owns, and operates digital platforms and software systems.
-          These platforms may include subscription-based services, digital products, and transaction-based environments.
+          Card transactions will be acquired for Honey Badger Technologies (PTY) LTD via PayFast,
+          the approved payment gateway for South African acquiring banks.
         </p>
 
-        <h2 className="text-white font-semibold mt-6">Platform Usage</h2>
         <p>
-          Users may access and interact with platforms operated by Honey Badger Technologies.
-          Each platform may have its own specific rules and terms.
+          PayFast uses Secure Socket Layer (SSL) encryption and no card details are stored on this website.
         </p>
 
-        <h2 className="text-white font-semibold mt-6">Payments</h2>
+        {/* CUSTOMER DATA */}
+        <h2 className="text-white font-semibold">6. Customer Data</h2>
         <p>
-          Payments are processed securely through third-party providers including Stripe and PayFast.
-          All payments are final once completed and are subject to the terms of those providers.
+          Customer details are stored separately from card details which are entered on PayFast’s secure site.
+          Honey Badger Technologies complies with the Protection of Personal Information Act (POPIA).
         </p>
 
-        <h2 className="text-white font-semibold mt-6">Digital Products & Tokens</h2>
+        {/* PRIVACY */}
+        <h2 className="text-white font-semibold">7. Privacy Policy</h2>
         <p>
-          Certain platforms may use digital credits, tokens, or access-based systems.
-          These are digital access tools and do not represent currency, stored value, or financial instruments.
+          We take all reasonable steps to protect personal information.
+          PayFast privacy policy can be accessed at https://payfast.io/privacy-policy/
         </p>
 
-        <h2 className="text-white font-semibold mt-6">No Gambling</h2>
+        {/* RESPONSIBILITY */}
+        <h2 className="text-white font-semibold">8. Responsibility</h2>
         <p>
-          Honey Badger Technologies does not operate gambling services.
-          Any competition-based platform operated is skill-based and not dependent on chance.
+          Honey Badger Technologies takes responsibility for all aspects relating to transactions,
+          including customer service, dispute resolution, and delivery of services.
         </p>
 
-        <h2 className="text-white font-semibold mt-6">Liability</h2>
+        {/* COUNTRY */}
+        <h2 className="text-white font-semibold">9. Country of Domicile</h2>
+        <p>
+          This website is governed by the laws of South Africa.
+        </p>
+
+        {/* CURRENCY */}
+        <h2 className="text-white font-semibold">10. Currency</h2>
+        <p>
+          All transactions are processed in South African Rand (ZAR).
+        </p>
+
+        {/* PLATFORM NOTES */}
+        <h2 className="text-white font-semibold">11. Platform Usage</h2>
+        <p>
+          Platforms operated by Honey Badger Technologies may include subscription services, digital products,
+          and skill-based competition environments such as Teez Golf Challenges.
+        </p>
+
+        <h2 className="text-white font-semibold">12. Digital Products & Tokens</h2>
+        <p>
+          Digital tokens and credits are access tools only and do not represent currency or financial instruments.
+          Tokens are non-refundable and non-transferable.
+        </p>
+
+        <h2 className="text-white font-semibold">13. No Gambling</h2>
+        <p>
+          Honey Badger Technologies does not operate gambling services. All competitions are skill-based.
+        </p>
+
+        <h2 className="text-white font-semibold">14. Liability</h2>
         <p>
           Services are provided "as is". Honey Badger Technologies is not liable for loss of data,
-          revenue, or platform interruption.
+          revenue, or interruptions.
         </p>
 
-        <h2 className="text-white font-semibold mt-6">Fraud & Misuse</h2>
+        <h2 className="text-white font-semibold">15. Fraud & Misuse</h2>
         <p>
-          Accounts may be suspended or terminated for misuse, fraud, or system manipulation.
+          Accounts may be suspended or terminated for misuse or fraudulent activity.
         </p>
 
-        <h2 className="text-white font-semibold mt-6">Governing Law</h2>
+        {/* COMPANY INFO */}
+        <h2 className="text-white font-semibold">16. Company Information</h2>
         <p>
-          These Terms are governed by the laws of South Africa.
+          Company Name: Honey Badger Technologies (PTY) LTD<br />
+          Registration Number: 2026/102722/07<br />
+          Address: 71 Duke Close, Silver Stream Estate, Pretoria, Gauteng, 0081<br />
+          Email: info@honeybadgertech.co.za<br />
+          Phone: +27 082 837 0266
         </p>
 
-        <h2 className="text-white font-semibold mt-6">Contact</h2>
+        {/* VARIATION */}
+        <h2 className="text-white font-semibold">17. Variation</h2>
         <p>
-          info@honeybadgertech.com | admin@teezgolfchallenges.com
+          These Terms may be updated at any time without prior notice.
         </p>
 
       </div>
