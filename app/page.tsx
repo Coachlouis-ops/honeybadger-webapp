@@ -319,36 +319,59 @@ export default function HomePage() {
           </p>
         </div>
 
-       <a
+  <button
   onClick={() => router.push("/contact")}
   className="bg-purple-600 px-6 py-3 rounded cursor-pointer"
 >
   Start a Conversation →
-</a>
+</button>
       </section>
 
-      <div>
-  <h4 className="font-bold mb-4">Company</h4>
+    {/* ================= FOOTER ================= */}
+<footer className="px-8 py-16 border-t border-purple-200 bg-purple-50 text-black grid md:grid-cols-3 gap-10">
 
-  <ul className="space-y-2 text-gray-400 mb-4">
-    <li onClick={() => router.push("/portfolio")} className="cursor-pointer">Portfolio</li>
-    <li onClick={() => router.push("/contact")} className="cursor-pointer">Contact</li>
-    <li onClick={() => router.push("/privacy")} className="cursor-pointer">Privacy Policy</li>
-    <li onClick={() => router.push("/terms")} className="cursor-pointer">Terms & Conditions</li>
-  </ul>
-
-  {/* PAYMENT LOGOS */}
-  <div className="flex items-center gap-3 flex-wrap">
-
-    <img src="/Payfast logo.svg" className="h-6 object-contain" />
-    <img src="/Visa.png" className="h-5 object-contain" />
-    <img src="/Master Card.png" className="h-5 object-contain" />
-    <img src="/American Express Logo.png" className="h-5 object-contain" />
-    <img src="/Diners Club Logo.png" className="h-5 object-contain" />
-    <img src="/instantEFT_hi-Res_logo.png" className="h-5 object-contain" />
-
+  <div>
+    <h3 className="font-bold mb-4">HONEY BADGER TECHNOLOGIES PTY LTD</h3>
+    <p className="text-gray-600">
+      Developing and operating global digital platforms.
+    </p>
   </div>
-</div>
+
+  <div>
+    <h4 className="font-bold mb-4">Solutions</h4>
+    <ul className="space-y-2 text-gray-600">
+      <li>Digital Products</li>
+      <li>AI Solutions</li>
+      <li>Mobile Applications</li>
+      <li>E-commerce Systems</li>
+    </ul>
+  </div>
+
+  <div>
+    <h4 className="font-bold mb-4">Company</h4>
+
+    <ul className="space-y-2 text-gray-600 mb-6">
+      <li onClick={() => router.push("/portfolio")} className="cursor-pointer">Portfolio</li>
+      <li onClick={() => router.push("/contact")} className="cursor-pointer">Contact</li>
+      <li onClick={() => router.push("/privacy")} className="cursor-pointer">Privacy Policy</li>
+      <li onClick={() => router.push("/terms")} className="cursor-pointer">Terms & Conditions</li>
+    </ul>
+
+    {/* PAYMENT LOGOS */}
+    <div className="flex items-center gap-4 flex-wrap">
+
+      <img src="/Payfast logo.svg" className="h-8 object-contain" />
+      <img src="/Visa.png" className="h-7 object-contain" />
+      <img src="/Master Card.png" className="h-7 object-contain" />
+      <img src="/American Express Logo.png" className="h-7 object-contain" />
+      <img src="/Diners Club Logo.png" className="h-7 object-contain" />
+      <img src="/instantEFT_hi-Res_logo.png" className="h-7 object-contain" />
+
+    </div>
+  </div>
+
+</footer>
+
 
       {/* ================= COOKIE BANNER ================= */}
       {showCookies && (
