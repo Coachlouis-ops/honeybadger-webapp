@@ -327,37 +327,28 @@ export default function HomePage() {
 </a>
       </section>
 
-      {/* ================= FOOTER ================= */}
-      <footer className="px-8 py-16 border-t border-purple-800 grid md:grid-cols-3 gap-10">
+      <div>
+  <h4 className="font-bold mb-4">Company</h4>
 
-        <div>
-          <h3 className="font-bold mb-4">HONEY BADGER TECHNOLOGIES PTY LTD</h3>
-          <p className="text-gray-400">
-            Developing and operating global digital platforms.
-          </p>
-        </div>
+  <ul className="space-y-2 text-gray-400 mb-4">
+    <li onClick={() => router.push("/portfolio")} className="cursor-pointer">Portfolio</li>
+    <li onClick={() => router.push("/contact")} className="cursor-pointer">Contact</li>
+    <li onClick={() => router.push("/privacy")} className="cursor-pointer">Privacy Policy</li>
+    <li onClick={() => router.push("/terms")} className="cursor-pointer">Terms & Conditions</li>
+  </ul>
 
-        <div>
-          <h4 className="font-bold mb-4">Solutions</h4>
-          <ul className="space-y-2 text-gray-400">
-            <li>Digital Products</li>
-            <li>AI Solutions</li>
-            <li>Mobile Applications</li>
-            <li>E-commerce Systems</li>
-          </ul>
-        </div>
+  {/* PAYMENT LOGOS */}
+  <div className="flex items-center gap-3 flex-wrap">
 
-        <div>
-          <h4 className="font-bold mb-4">Company</h4>
-          <ul className="space-y-2 text-gray-400">
-            <li onClick={() => router.push("/portfolio")} className="cursor-pointer">Portfolio</li>
-            <li onClick={() => router.push("/contact")} className="cursor-pointer">Contact</li>
-            <li onClick={() => router.push("/privacy")} className="cursor-pointer">Privacy Policy</li>
-            <li onClick={() => router.push("/terms")} className="cursor-pointer">Terms & Conditions</li>
-          </ul>
-        </div>
+    <img src="/Payfast logo.svg" className="h-6 object-contain" />
+    <img src="/Visa.png" className="h-5 object-contain" />
+    <img src="/Master Card.png" className="h-5 object-contain" />
+    <img src="/American Express Logo.png" className="h-5 object-contain" />
+    <img src="/Diners Club Logo.png" className="h-5 object-contain" />
+    <img src="/instantEFT_hi-Res_logo.png" className="h-5 object-contain" />
 
-      </footer>
+  </div>
+</div>
 
       {/* ================= COOKIE BANNER ================= */}
       {showCookies && (
