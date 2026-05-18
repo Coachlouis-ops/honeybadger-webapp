@@ -310,6 +310,21 @@ export default function HomePage() {
 
           </div>
 
+          {/* CERTIFICATIONS */}
+<div className="mt-10">
+  <h4 className="text-2xl font-bold mb-6 text-white">
+    Certifications & Technical Standards
+  </h4>
+
+  <div className="bg-white rounded-xl p-4 flex justify-center">
+    <img
+      src="/certifications.png"
+      alt="Technology Certifications"
+      className="max-w-full h-auto rounded-lg"
+    />
+  </div>
+</div>
+
           <p className="text-gray-400 text-sm mt-8 leading-relaxed">
             Our approach is proactive rather than reactive — identifying
             weaknesses, inefficiencies, and potential failures before they
