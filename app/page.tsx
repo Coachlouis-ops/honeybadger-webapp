@@ -138,6 +138,184 @@ export default function HomePage() {
           </div>
 
         </div>
+            </section>
+
+      {/* ================= IT SERVICES ================= */}
+      <section className="px-8 py-20 border-t border-purple-800">
+        <h2 className="text-4xl font-bold mb-4">
+          IT Support & Technology Services
+        </h2>
+
+        <p className="text-gray-300 max-w-4xl mb-12 leading-relaxed">
+          From small businesses to growing enterprises, we design, install,
+          manage, and support complete IT environments built for stability,
+          security, and long-term scalability. Our focus is practical technology
+          solutions that improve operational efficiency, reduce downtime, and
+          keep businesses running without interruption.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-6">
+
+          {/* END USER SUPPORT */}
+          <div className="border border-purple-700 p-6 rounded-lg">
+            <h3 className="text-2xl font-bold mb-4">
+              End-User Support
+            </h3>
+
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li>• Remote and onsite technical support</li>
+              <li>• Desktop and laptop troubleshooting</li>
+              <li>• Printer and peripheral support</li>
+              <li>• Email and connectivity issues</li>
+              <li>• Software installation and configuration</li>
+              <li>• Office workstation setup</li>
+              <li>• Ongoing technical maintenance</li>
+            </ul>
+          </div>
+
+          {/* MICROSOFT 365 */}
+          <div className="border border-purple-700 p-6 rounded-lg">
+            <h3 className="text-2xl font-bold mb-4">
+              Microsoft 365 Solutions
+            </h3>
+
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li>• Microsoft 365 setup and migration</li>
+              <li>• Business email configuration</li>
+              <li>• Outlook support and synchronization</li>
+              <li>• Teams and SharePoint integration</li>
+              <li>• User licensing and permissions</li>
+              <li>• OneDrive cloud management</li>
+              <li>• Security and compliance configuration</li>
+            </ul>
+          </div>
+
+          {/* NETWORK */}
+          <div className="border border-purple-700 p-6 rounded-lg">
+            <h3 className="text-2xl font-bold mb-4">
+              Network & Infrastructure
+            </h3>
+
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li>• Business WiFi deployment</li>
+              <li>• Router and firewall configuration</li>
+              <li>• LAN and WAN management</li>
+              <li>• Structured network installations</li>
+              <li>• VPN and remote access solutions</li>
+              <li>• Network monitoring and optimization</li>
+              <li>• Server environment support</li>
+            </ul>
+          </div>
+
+          {/* SECURITY */}
+          <div className="border border-purple-700 p-6 rounded-lg">
+            <h3 className="text-2xl font-bold mb-4">
+              Cybersecurity & Access Control
+            </h3>
+
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li>• Endpoint protection deployment</li>
+              <li>• Firewall and network security</li>
+              <li>• Multi-factor authentication setup</li>
+              <li>• User access control management</li>
+              <li>• Threat detection and prevention</li>
+              <li>• Security audits and assessments</li>
+              <li>• Device security policies</li>
+            </ul>
+          </div>
+
+          {/* BACKUP */}
+          <div className="border border-purple-700 p-6 rounded-lg">
+            <h3 className="text-2xl font-bold mb-4">
+              Data Backup & Recovery
+            </h3>
+
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li>• Automated backup systems</li>
+              <li>• Cloud backup solutions</li>
+              <li>• Disaster recovery planning</li>
+              <li>• File restoration services</li>
+              <li>• Backup monitoring and verification</li>
+              <li>• Business continuity solutions</li>
+            </ul>
+          </div>
+
+          {/* OPTIMIZATION */}
+          <div className="border border-purple-700 p-6 rounded-lg">
+            <h3 className="text-2xl font-bold mb-4">
+              System Optimization
+            </h3>
+
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li>• Performance diagnostics</li>
+              <li>• Slow system optimization</li>
+              <li>• Hardware fault detection</li>
+              <li>• Software conflict resolution</li>
+              <li>• Stability and uptime improvements</li>
+              <li>• Preventative maintenance</li>
+              <li>• System health monitoring</li>
+            </ul>
+          </div>
+
+        </div>
+
+        {/* SKILLS */}
+        <div className="mt-16 border border-purple-700 rounded-lg p-8">
+          <h3 className="text-3xl font-bold mb-6">
+            Technical Skills & Expertise
+          </h3>
+
+          <div className="grid md:grid-cols-3 gap-6 text-gray-300">
+
+            <div>
+              <h4 className="font-bold text-white mb-3">
+                Business IT Environments
+              </h4>
+
+              <ul className="space-y-2 text-sm">
+                <li>• Complete IT environment management</li>
+                <li>• Remote workforce support</li>
+                <li>• IT consulting and planning</li>
+                <li>• Multi-device ecosystems</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-bold text-white mb-3">
+                Cloud & Networking
+              </h4>
+
+              <ul className="space-y-2 text-sm">
+                <li>• Microsoft 365</li>
+                <li>• SharePoint & OneDrive</li>
+                <li>• VPN solutions</li>
+                <li>• Firewall management</li>
+                <li>• WiFi optimization</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-bold text-white mb-3">
+                Hardware & Security
+              </h4>
+
+              <ul className="space-y-2 text-sm">
+                <li>• Desktop and laptop support</li>
+                <li>• Device deployment</li>
+                <li>• Endpoint security</li>
+                <li>• Threat prevention</li>
+                <li>• Backup protection strategies</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <p className="text-gray-400 text-sm mt-8 leading-relaxed">
+            Our approach is proactive rather than reactive — identifying
+            weaknesses, inefficiencies, and potential failures before they
+            disrupt operations.
+          </p>
+        </div>
       </section>
 
     {/* ================= PLATFORMS ================= */}
