@@ -68,10 +68,6 @@ export default function HomePage() {
             Our platforms generate revenue through subscriptions, digital products, and transaction-based models.
           </p>
 
-          <p className="mt-4 text-gray-400 max-w-lg text-sm">
-            Teez Golf Challenges, is a global golf skill-based competition gaming platform.
-          </p>
-
           <div className="flex gap-4 mt-8">
             <a
               onClick={() => router.push("/contact")}
