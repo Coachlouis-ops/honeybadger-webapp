@@ -58,7 +58,7 @@ export default function PortfolioPage() {
           </p>
 
           <p className="text-gray-300 mb-4">
-            Skill-based golf competition platform using digital tokens for entry, performance tracking, and rewards.
+            Skill-based golf competition gaming platform.
           </p>
 
           <a href="https://www.teezgolfchallenges.com" target="_blank" className="text-purple-400">
