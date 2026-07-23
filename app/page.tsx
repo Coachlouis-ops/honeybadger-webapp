@@ -69,8 +69,7 @@ export default function HomePage() {
           </p>
 
           <p className="mt-4 text-gray-400 max-w-lg text-sm">
-            Our flagship platform, Teez Golf Challenges, is a global skill-based competition platform where players
-            purchase digital tokens to enter challenges, compete, and win rewards.
+            Teez Golf Challenges, is a global golf skill-based competition gaming platform.
           </p>
 
           <div className="flex gap-4 mt-8">
@@ -350,9 +349,7 @@ export default function HomePage() {
       </p>
 
       <p className="text-gray-300 mb-4">
-        A global skill-based golf competition platform where players enter challenges using digital tokens,
-        compete based on performance, and earn rewards. The platform operates on a digital entry system and
-        does not involve betting or gambling.
+        A global skill-based golf competition gaming platform.
       </p>
 
       <a href="https://www.teezgolfchallenges.com" target="_blank" className="text-purple-400">
