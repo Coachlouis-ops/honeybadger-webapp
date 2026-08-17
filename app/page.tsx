@@ -334,23 +334,160 @@ export default function HomePage() {
 
   <div className="space-y-10">
 
-    {/* TEEZ - FLAGSHIP */}
-    <div className="border border-purple-500 p-6 rounded-lg">
-      <img src="/teez_logo.png" className="h-16 mb-4" />
+       {/* TEEZ - FLAGSHIP */}
+    <div className="border-2 border-purple-500 p-6 md:p-8 rounded-lg">
 
-      <h3 className="text-2xl font-bold mb-2">Teez Golf Challenges</h3>
+      {/* LOGO + FLAGSHIP */}
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+        <img
+          src="/teez_logo.png"
+          alt="Teez Golf Challenges"
+          className="h-16 w-auto object-contain self-start"
+        />
 
-      <p className="text-sm text-purple-400 mb-2">
-        Target Market: Global amateur and professional golfers
+        <span className="text-xs font-bold tracking-widest text-purple-400 border border-purple-500 rounded-full px-4 py-2 self-start">
+          FLAGSHIP DIGITAL PLATFORM
+        </span>
+      </div>
+
+      {/* TITLE */}
+      <h3 className="text-3xl md:text-4xl font-bold mb-2">
+        Teez Golf Challenges
+      </h3>
+
+      <p className="text-xl md:text-2xl font-bold text-purple-400 mb-6">
+        PLAY THE PLAYER. NOT THE COURSE.
       </p>
 
-      <p className="text-gray-300 mb-4">
-        A global skill-based golf competition gaming platform.
+      <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-4 max-w-5xl">
+        Teez Golf Challenges is a subscription-based digital golf gaming and
+        career-progression platform that transforms real-world player-vs-player
+        golf challenges into an ongoing competitive career.
       </p>
 
-      <a href="https://www.teezgolfchallenges.com" target="_blank" className="text-purple-400">
-        Visit Platform →
+      <p className="text-gray-400 leading-relaxed mb-8 max-w-5xl">
+        Players create challenges, invite other golfers, select competitive
+        formats, play their actual golf match on a real golf course, and
+        finalise the result through Teez. Every completed challenge contributes
+        to the player's persistent Teez career, statistics, rankings,
+        achievements, and long-term progression.
+      </p>
+
+      {/* GAMEPLAY FLOW */}
+      <div className="border border-purple-800 rounded-lg p-5 mb-8 bg-black/20">
+        <p className="text-sm font-bold text-purple-400 mb-4">
+          FROM REAL-WORLD GOLF TO YOUR DIGITAL CAREER
+        </p>
+
+        <div className="flex flex-wrap items-center gap-2 text-sm md:text-base font-semibold">
+          <span>CREATE</span>
+          <span className="text-purple-500">→</span>
+          <span>CHALLENGE</span>
+          <span className="text-purple-500">→</span>
+          <span>PLAY</span>
+          <span className="text-purple-500">→</span>
+          <span>WIN</span>
+          <span className="text-purple-500">→</span>
+          <span>BUILD YOUR CAREER</span>
+          <span className="text-purple-500">→</span>
+          <span>EARN VAULT KEYS</span>
+          <span className="text-purple-500">→</span>
+          <span>OPEN MYSTERY REWARDS</span>
+        </div>
+      </div>
+
+      {/* CAREER + VAULT */}
+      <div className="grid md:grid-cols-2 gap-6 mb-8">
+
+        {/* CAREER */}
+        <div className="border border-purple-700 rounded-lg p-6">
+          <h4 className="text-xl font-bold mb-2">
+            Build Your Golf Career
+          </h4>
+
+          <p className="text-gray-400 text-sm mb-5">
+            Every challenge builds a persistent player profile and competitive
+            career inside Teez.
+          </p>
+
+          <div className="grid grid-cols-2 gap-3 text-sm text-gray-300">
+            <div>Challenges Played</div>
+            <div>Wins & Losses</div>
+            <div>Win %</div>
+            <div>Winning Streak</div>
+            <div>Career Points</div>
+            <div>Player Level</div>
+            <div>Power Score</div>
+            <div>Rankings</div>
+            <div>Achievements</div>
+            <div>Challenge History</div>
+            <div>Teez Tokens Played</div>
+            <div>Teez Tokens Won</div>
+          </div>
+        </div>
+
+        {/* PLAYER VAULT */}
+        <div className="border border-purple-700 rounded-lg p-6">
+          <h4 className="text-xl font-bold mb-2">
+            Player Vault
+          </h4>
+
+          <p className="text-gray-400 text-sm mb-5">
+            Genuine gameplay and career achievements unlock Vault Keys. Players
+            use their Keys in the Player Vault to select and open mystery coins
+            containing in-app gameplay and career rewards.
+          </p>
+
+          <div className="flex flex-wrap items-center gap-2 font-bold text-sm mb-5">
+            <span className="text-purple-300">BRONZE</span>
+            <span className="text-purple-500">→</span>
+            <span className="text-gray-300">SILVER</span>
+            <span className="text-purple-500">→</span>
+            <span className="text-yellow-300">GOLD</span>
+            <span className="text-purple-500">→</span>
+            <span className="text-cyan-200">DIAMOND</span>
+          </div>
+
+          <p className="text-gray-400 text-sm">
+            Mystery rewards can include bonus play tokens, Career XP boosts,
+            Career Points boosts, Power Score boosts, free challenge entries,
+            profile badges, titles, and other in-app gameplay and career
+            benefits.
+          </p>
+        </div>
+
+      </div>
+
+      {/* SUBSCRIPTION MODEL */}
+      <div className="border border-purple-500 rounded-lg p-6 mb-8">
+        <h4 className="text-xl font-bold mb-3">
+          Subscription-Based Gaming
+        </h4>
+
+        <p className="text-gray-300 mb-3">
+          Players subscribe to Teez for <strong>R99 per month</strong>, which
+          currently includes <strong>100 Teez play tokens per month</strong>.
+        </p>
+
+        <p className="text-gray-400 text-sm leading-relaxed">
+          Teez Tokens are digital play credits used exclusively within the
+          Platform. They are not money, have no cash redemption value, and
+          cannot be withdrawn, converted into money, or used as payment between
+          players. Player Vault rewards are in-app gameplay and career benefits
+          designed to enhance the Teez gaming experience.
+        </p>
+      </div>
+
+      {/* CTA */}
+      <a
+        href="https://www.teezgolfchallenges.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block bg-purple-600 hover:bg-purple-500 px-6 py-3 rounded font-bold"
+      >
+        EXPLORE TEEZ GOLF CHALLENGES →
       </a>
+
     </div>
 
     {/* VECTOR CARTS */}
